@@ -20,7 +20,4 @@ public class RandevuException extends RuntimeException{
     public RandevuException(String s, ErrorType errorType) {
         this.errorType = errorType;
     }
-
-    public RandevuException(String doktorListesiBos) {
-    }
 }
