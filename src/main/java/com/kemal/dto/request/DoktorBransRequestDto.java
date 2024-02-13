@@ -1,7 +1,6 @@
 package com.kemal.dto.request;
 
 import com.kemal.utility.enums.Brans;
-import com.kemal.utility.enums.Unvan;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
@@ -13,10 +12,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class DoktorSaveRequestDto {
-
-
-    private Long id;
-    private String doktorAdi;
+public class DoktorBransRequestDto {
+    private String ad;
+    private String soyad;
+    @Enumerated(EnumType.STRING)
+    private Brans brans;
 }
